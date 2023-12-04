@@ -1,0 +1,36 @@
+CAMPOS FUNCIONARIO
+Nome
+email
+senha
+cargo
+
+
+Landing mostra o resumo dos pedidos
+codigo Pedido
+nome Representante
+data de venda
+status
+
+Permissoes, pro funcionario aparecer só suas vendas
+
+PEDIDO COLOCAR ALARME PARA QUANDO CHEGAR PERTO DA DATA
+
+
+CAMPOS PRODUTO
+modelo - tem que cadastrar
+campo detalhe vem do modelo.detalhe
+Tecido - tem que cadastrar  - codigo SEM SER UNICO, fornecedor, classificação, nome do tecido
+
+Quantidade de bolso - descricao bolso
+logomarca - logomarca.descricao, pra falar onde fica o bolso
+true or false de silk ou bordado pra logo
+
+CAMPOS VENDA
+Cliente - cadastravel
+Representante
+data de nascimento - cpf
+nome
+if(cnpj ) nomeFantasia
+telefone
+
+PAGINA MANDAR EMAIL
