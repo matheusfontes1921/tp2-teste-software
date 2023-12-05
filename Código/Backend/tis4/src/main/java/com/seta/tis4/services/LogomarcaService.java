@@ -1,4 +1,4 @@
-package com.seta.tis4.model.services;
+package com.seta.tis4.services;
 
 import com.seta.tis4.model.dtos.produto.LogoMarcaDTO;
 import com.seta.tis4.model.entities.produto.LogoMarca;

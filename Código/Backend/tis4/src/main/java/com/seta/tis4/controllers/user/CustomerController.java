@@ -2,7 +2,7 @@ package com.seta.tis4.controllers.user;
 
 import com.seta.tis4.model.dtos.customer.EditCustomerDTO;
 import com.seta.tis4.model.dtos.customer.CreateCustomerDTO;
-import com.seta.tis4.model.services.CustomerService;
+import com.seta.tis4.services.CustomerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

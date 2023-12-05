@@ -2,7 +2,7 @@ package com.seta.tis4.controllers.produto;
 
 
 import com.seta.tis4.model.dtos.produto.LogoMarcaDTO;
-import com.seta.tis4.model.services.LogomarcaService;
+import com.seta.tis4.services.LogomarcaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

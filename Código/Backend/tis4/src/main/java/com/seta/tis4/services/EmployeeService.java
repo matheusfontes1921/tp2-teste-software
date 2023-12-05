@@ -1,4 +1,4 @@
-package com.seta.tis4.model.services;
+package com.seta.tis4.services;
 
 import com.seta.tis4.model.dtos.employee.CreateEmployeeDTO;
 import com.seta.tis4.model.dtos.employee.LoginDto;
@@ -64,7 +64,6 @@ public class EmployeeService {
     }
 
 
-    //TODO Refactor this method
     public ResponseEntity<?> login(LoginDto dto) {
         if (!existsByEmail(dto.email())) {
             return ResponseEntity.badRequest().body("Email incorreto");
@@ -78,13 +77,14 @@ public class EmployeeService {
         }
     }
 
+    public ResponseEntity<?> getEmployee() {
+        return ResponseEntity.ok().body(employeeRepository.findAll());
+    }
     private boolean existsByEmail(String email) {
         return employeeRepository.findByEmail(email).isPresent();
     }
 
-    public ResponseEntity<?> getEmployee() {
-        return ResponseEntity.ok().body(employeeRepository.findAll());
-    }
+
 
 
 }

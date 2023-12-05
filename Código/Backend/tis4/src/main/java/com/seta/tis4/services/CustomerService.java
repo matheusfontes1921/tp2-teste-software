@@ -1,4 +1,4 @@
-package com.seta.tis4.model.services;
+package com.seta.tis4.services;
 
 import br.com.caelum.stella.validation.CNPJValidator;
 import br.com.caelum.stella.validation.CPFValidator;
@@ -59,7 +59,6 @@ public class CustomerService {
         if(existsByTelefone(dto.telefone())){
             return ResponseEntity.badRequest().body("Telefone já cadastrado");
         }
-
         CustomerType customerType;
 
         if(dto.cpfCnpj().replaceAll("[^0-9]", "").length() > 11) {
@@ -111,16 +110,7 @@ public class CustomerService {
             return ResponseEntity.ok().body("Cliente deletada com sucesso");
         }
     }
-
-    //region Private Methods
-
-    /**
-     * @param cpf_cnpj CPF ou CNPJ no formato:
-     *                 CPF: 000.000.000-00 ou 00000000000
-     *                 CNPJ: 00.000.000/0000-00 ou 00000000000000
-     * @return boolean true if the string is a valid CPF ou CNPJ, false otherwise
-     */
-    private boolean isValidate(String cpf_cnpj) {
+    public boolean isValidate(String cpf_cnpj) {
         cpf_cnpj = cpf_cnpj.replaceAll("[^0-9]", "");
         if (cpf_cnpj.length() > 11) {
             CNPJValidator validator = new CNPJValidator();
@@ -139,10 +129,7 @@ public class CustomerService {
                 return false;
             }
         }
-
-
     }
-
     private Boolean existsByEmail(String email) {
         return customerRepository.existsByEmail(email);
     }
