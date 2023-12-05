@@ -1,7 +1,7 @@
 package com.seta.tis4.controllers.produto;
 
 import com.seta.tis4.model.dtos.produto.TecidoDTO;
-import com.seta.tis4.model.services.TecidoService;
+import com.seta.tis4.services.TecidoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

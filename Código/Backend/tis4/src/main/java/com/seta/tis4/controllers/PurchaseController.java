@@ -2,7 +2,7 @@ package com.seta.tis4.controllers;
 
 import com.seta.tis4.model.dtos.purchase.CreatePurchaseDTO;
 import com.seta.tis4.model.dtos.purchase.UpdatePurchaseDTO;
-import com.seta.tis4.model.services.PurchaseService;
+import com.seta.tis4.services.PurchaseService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

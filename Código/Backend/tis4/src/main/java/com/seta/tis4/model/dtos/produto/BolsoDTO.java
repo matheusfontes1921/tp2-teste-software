@@ -2,7 +2,7 @@ package com.seta.tis4.model.dtos.produto;
 
 import com.seta.tis4.model.entities.produto.Bolso;
 
-public record BolsoDTO(Long id,
+public record BolsoDTO( Long id,
                        Integer quantidadeBolsos,
                        String descricao) {
     public Bolso maptoBolso() {
@@ -11,4 +11,6 @@ public record BolsoDTO(Long id,
         bolso.setDescricao(this.descricao());
         return bolso;
     }
+
+
 }

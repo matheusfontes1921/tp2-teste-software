@@ -6,7 +6,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.1.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com.seta</groupId>
     <artifactId>tis4</artifactId>
@@ -22,31 +22,13 @@
             <artifactId>spring-boot-starter-data-jdbc</artifactId>
             <scope>runtime</scope>
         </dependency>
-<dependency>
-	<groupId>org.junit.jupiter</groupId>
-	<artifactId>junit-jupiter-engine</artifactId>
-	<version>5.2.0</version>
-	<scope>test</scope>
-</dependency>
-<dependency>
-	<groupId>org.junit.platform</groupId>
-	<artifactId>junit-platform-runner</artifactId>
-	<version>1.2.0</version>
-	<scope>test</scope>
-</dependency>
-<dependency>
-	<groupId>org.junit.jupiter</groupId>
-	<artifactId>junit-jupiter-params</artifactId>
-	<version>5.2.0</version>
-	<scope>test</scope>
-</dependency>
+
 <dependency>
     <groupId>org.mockito</groupId>
     <artifactId>mockito-core</artifactId>
-    <version>4.2.0</version> <!-- Versão mais recente do Mockito -->
+    <version>4.2.0</version>
     <scope>test</scope>
 </dependency>
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -117,25 +99,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-                    <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.7</version>
-            <executions>
-                <execution>
-                    <id>prepare-agent</id>
-                    <goals>
-                        <goal>prepare-agent</goal>
-                    </goals>
-                </execution>
-                <execution>
-                    <id>report</id>
-                    <goals>
-                        <goal>report</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
         </plugins>
     </build>
 

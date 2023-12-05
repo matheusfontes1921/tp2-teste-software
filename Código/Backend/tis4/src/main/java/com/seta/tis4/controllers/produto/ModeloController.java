@@ -1,7 +1,7 @@
 package com.seta.tis4.controllers.produto;
 
 import com.seta.tis4.model.dtos.produto.ModeloDTO;
-import com.seta.tis4.model.services.ModeloService;
+import com.seta.tis4.services.ModeloService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
